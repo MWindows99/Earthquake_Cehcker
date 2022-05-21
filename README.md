@@ -6,6 +6,11 @@ This library uses this API.
 
 [p2pquake.net](https://p2pquake.net)
 
+### License
+You can use under MIT License.
+
+[View License](https://github.com/MWindows99/Earthquake_Cehcker/blob/main/LICENSE)
+
 ## Introduction
 ✅ You can easily get the latest one earthquake information in this library.<br>
 ✅ An internet connection is required to use this library.<br>

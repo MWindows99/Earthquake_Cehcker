@@ -12,16 +12,18 @@ This library uses this API.
 ⚠️ This library is currently **ONLY** available in Japanese.
 
 ## Object
-**[✅ Success]** This library returns **dictionary** object.
+This library returns **dictionary** object.
 
+ - ```status``` : success / error
  - ```point``` : Epicenter
  - ```time``` : Date and time of the earthquake
  - ```magnitude``` : The magnitude of the earthquake
  - ```scale``` : Maximum seismic intensity
  - ```tsunami``` : Tsunami information
 
-**[❌ Except]** This library returns **boolean** object.
- - ```False``` : API Error / Connection timeout, etc.
+**[Cause of Error]**
+ - API Error
+ - Connection timeout, etc.
 
 ### Object Example
 ```

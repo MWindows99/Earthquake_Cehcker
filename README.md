@@ -32,7 +32,7 @@ This library returns **dictionary** object.
 
 ### Object Example
 ```
-{'point': '石川県能登地方', 'time': '2022/05/20 20:14:00', 'magnitude': '2', 'scale': '1.0', 'tsunami': 'この地震による、津波の心配はありません。'}
+{'status': 'success', 'point': '石川県能登地方', 'time': '2022/05/20 20:14:00', 'magnitude': '2', 'scale': '1.0', 'tsunami': 'この地震による、津波の心配はありません。'}
 ```
 
 ## Usage

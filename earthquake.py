@@ -2,12 +2,14 @@ import requests
 import json
 
 def earthquake():
+    message = {}
     request_url = "https://api.p2pquake.net/v2/history?codes=551&limit=1"
     try:
         r = requests.get(request_url, timeout=4.0)
         earth_data = r.json()[0]
     except:
-        return False
+        message["status"] = "error"
+        return message
     e_point = str(earth_data["earthquake"]["hypocenter"]["name"])
     e_tsunami = str(earth_data["earthquake"]["domesticTsunami"])
     e_magnitude = int(earth_data["earthquake"]["hypocenter"]["magnitude"])
@@ -33,7 +35,7 @@ def earthquake():
         e_tsunami_mes = "この地震により、津波注意報が発表されています。今後の情報に注意してください。詳しい情報は、気象庁ホームページをご確認ください。"
     elif e_tsunami == "Warning":
         e_tsunami_mes = "この地震により、津波予報が発表されています。落ち着いて速やかに行動してください。詳しい情報は、気象庁ホームページをご確認ください。"
-    message = {}
+    message["status"] = "success"
     message["point"] = e_point
     message["time"] = e_time
     message["magnitude"] = e_magnitude

@@ -12,7 +12,7 @@ This library uses this API.
 ⚠️ This library is currently **ONLY** available in Japanese.
 
 ## Object
-This library returns **dictionary** object.
+**[✅ Success]** This library returns **dictionary** object.
 
  - ```point``` : Epicenter
  - ```time``` : Date and time of the earthquake
@@ -20,8 +20,8 @@ This library returns **dictionary** object.
  - ```scale``` : Maximum seismic intensity
  - ```tsunami``` : Tsunami information
 
-### Except
- - ```False``` : Error
+**[❌ Except]** This library returns **boolean** object.
+ - ```False``` : API Error / Connection timeout, etc.
 
 ### Object Example
 ```
